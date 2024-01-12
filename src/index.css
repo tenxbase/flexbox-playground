@@ -1,0 +1,90 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap');
+
+/* font */
+@font-face {
+  font-family: 'EMprint';
+  src: url('/fonts/emprint/EMprint-Light.ttf');
+  font-weight: 300;
+}
+@font-face {
+  font-family: 'EMprint';
+  src: url('/fonts/emprint/EMprint-Regular.ttf');
+  font-weight: 400;
+}
+@font-face {
+  font-family: 'EMprint';
+  src: url('/fonts/emprint/EMprint-Medium.ttf');
+  font-weight: 500;
+}
+@font-face {
+  font-family: 'EMprint';
+  src: url('/fonts/emprint/EMprint-Semibold.ttf');
+  font-weight: 600;
+}
+@font-face {
+  font-family: 'EMprint';
+  src: url('/fonts/emprint/EMprint-Bold.ttf');
+  font-weight: 700;
+}
+@font-face {
+  font-family: 'EMprint';
+  src: url('/fonts/emprint/EMprint-ExtraBold.ttf');
+  font-weight: 800;
+}
+@font-face {
+  font-family: 'EMprint';
+  src: url('/fonts/emprint/EMprint-Black.ttf');
+  font-weight: 900;
+}
+
+body {
+  @apply text-sm text-gray-200;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.c-heading-text {
+  font-family: 'EMprint';
+}
+
+.c-container {
+  @apply mx-auto max-w-[1200px] px-5;
+}
+
+.c-container-sm {
+  @apply mx-auto max-w-[900px] px-5;
+}
+
+.c-title {
+  @apply font-semibold text-gray-50;
+}
+
+.c-title-faded {
+  @apply font-semibold text-gray-400;
+}
+
+/* BORDERS */
+
+.c-border {
+  @apply border border-gray-700/40;
+}
+
+.c-border-directional {
+  @apply border-gray-300 dark:border-gray-600;
+}
+
+.bg-stripes {
+  background: linear-gradient(
+    135deg,
+    #3b82f680 10%,
+    transparent 0,
+    transparent 50%,
+    #3b82f680 0,
+    #3b82f680 60%,
+    transparent 0,
+    transparent
+  );
+  background-size: 7.07px 7.07px;
+}
